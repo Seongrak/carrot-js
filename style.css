@@ -1,0 +1,121 @@
+body {
+  text-align: center;
+  background-color: black;
+}
+
+.game {
+  margin: auto;
+  background-image: url(./img/background.png);
+  height: 500px;
+  width: 800px;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+}
+
+.start_btn {
+  width: 60px;
+  height: 60px;
+  border: solid 4px black;
+  font-size: 24px;
+  transition: transform 300ms ease-in;
+}
+.start_btn:hover {
+  transform: scale(1.1);
+}
+
+.timer {
+  margin-top: 8px;
+
+  width: 100px;
+  text-align: center;
+  border: solid 4px black;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 32px;
+  visibility: hidden;
+
+  user-select: none;
+  cursor: auto;
+}
+
+.numsOfCarrots {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+  padding-top: 5px;
+
+  border-radius: 50%;
+  background-color: white;
+  font-size: 38px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  visibility: hidden;
+
+  user-select: none;
+  cursor: auto;
+}
+
+.game-field {
+  position: relative;
+  margin-top: 60px;
+  height: 100%;
+  width: 100%;
+}
+
+.pop-up {
+  display: block;
+  height: 160px;
+  width: 400px;
+  background-color: #00000090;
+  margin: auto;
+  color: white;
+  padding: 20px;
+  transform: translateY(-150%);
+  border-radius: 20px;
+}
+
+.pop-up-hide {
+  display: none;
+}
+
+.redo {
+  height: 60px;
+  width: 60px;
+  font-size: 24px;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.pop-up_msg {
+  display: block;
+  font-size: 38px;
+}
+
+.carrot,
+.bug {
+  transition: all 100ms ease-in;
+}
+.carrot:hover,
+.bug:hover {
+  transform: scale(1.1);
+}
